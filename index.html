@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Xml-constraints by emir-munoz</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/emir-munoz/xml-constraints">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Xml-constraints</h1>
+            <h2>XML-constraints projects</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/emir-munoz/xml-constraints/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/emir-munoz/xml-constraints/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h2>XML Constraints Project</h2>
+
+<p>This repository contains the resources used in the experiments of the 
+paper "Soft Cardinality Constraints on XML Data" for WWW2013.
+<br></p>
+
+<h3>Files</h3>
+
+<ul>
+<li>Dataset folder contains all the sets of keys used in the evaluation process.</li>
+    <li>Evaluation folder contains the applications to decide the implication 
+        problem over XML keys and Soft-max constraints. Also contains an excel 
+        file with all the results used to generate the corresponding graphics.</li>
+</ul><p>(Note: For now we only leave available executable versions for the applications.)</p>
+
+<h3>How to run</h3>
+
+<p>If you want to run our implementations execute the following commands in a console:</p>
+
+<pre>./xmlkeys -f dataset/tmp.keys -l label</pre> or,
+<pre>./max-const -f dataset/tmp.softmax -l label</pre>
+
+<p>where label is the fixed replacement label. The final response for both applications
+is a true if the first constraint (first line) in tmp file is implied by the following constraints;
+or false otherwise.</p>
+
+<p><br>
+For further question please do not hesitate to contact us: emir [a dot] munoz [an at] deri [a dot] org</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/emir-munoz">emir-munoz</a> can be found on <a href="https://github.com/emir-munoz/xml-constraints">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>

@@ -44,16 +44,31 @@
       <span class="banner-fix"></span>
 
       <section id="main_content">
-        <h2>XML Constraints Project</h2>
+        <h2>TLDKS 2013</h2>
 
-<p>This repository contains the resources used in the experiments of the 
-paper "Soft Cardinality Constraints on XML Data" for WWW2013.
-<br></p>
+<p>This repository contains the resources used in the experiments of the paper 
+"The Finite Implication Problem for Expressive XML Keys: Foundations, Applications, and Performance Evaluation" 
+for an Special Issue of the Springer journal "Transactions on Large Scale Data and Knowledge Centered Systems" (TLDKS).
+</p>
+
+<p>In this work we present the following contributions:
+<ol>
+	<li>Our first contribution establishes a new fragment of XML keys (namely Max-Keys) that keeps the right balance 
+	between expressiveness and efficiency of maintenance. More precisely, we characterize the associated implication problem
+	axiomatically, and propose a low-degree polynomial time decision algorithm.</li>
+	<li>Our second contribution concerns the exploration of this theoretical ideas
+	in practice. We develop and implement an efficient algorithm that decides the
+	implication problem for Max-Keys and thoroughly evaluate its performance.</li>
+	<li>Finally, some experiments for practical uses of the proposed decision algorithm. We show that the time to compute a 
+	non-redundant cover for a given set of keys in the fragment of Max-Keys, is just a small fraction of the average
+	time needed to validate an XML document against a single key.</li>
+</ol>
+</p>
 
 <h3>Files</h3>
 
 <ul>
-<li>Dataset folder contains all the sets of keys used in the evaluation process.</li>
+	<li>Dataset folder contains all the sets of keys used in the evaluation process.</li>
     <li>Evaluation folder contains the applications to decide the implication 
         problem over XML keys and Soft-max constraints. Also contains an excel 
         file with all the results used to generate the corresponding graphics.</li>

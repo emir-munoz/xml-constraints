@@ -93,31 +93,31 @@ XML documents against keys from the proposed fragment.</p>
 -->
 
 <h3>Files</h3>
-
 <ul>
-	<li>Dataset folder contains all the sets of keys used in the evaluation process.</li>
-    <li>Evaluation folder contains the applications to decide the implication 
-        problem over XML keys and Soft-max constraints. Also contains an excel 
-        file with all the results used to generate the corresponding graphics.</li>
-</ul><p>(Note: For now we only leave available executable versions for the applications.)</p>
+	<li>"cover-dataset" folder contains the sets of Max-Keys defined for each XML document.</li>
+    <li>"implication-dataset" folder contains the sets of Max-Keys used to decide the implication problem for Max-Keys.</li>
+    <li>"validation-dataset" folder contains the sets of Max-Keys, obtained from cover sets computation, to validate the XML documents.</li>
+    <li>"cover-uniq" is the application to compute a cover (in one-pass) for a given set of Max-Keys.</li>
+    <li>"cover-all" is the application to compute all possible covers for a given set of Max-Keys.</li>
+    <li>"max-keys" is the application to decide the implication problem over Max-Keys.</li>
+    <li>"validator" is the application to validate an XML document against a given set of Max-Keys.</li>
+    <li>"xml-constraints-covers-TLDKS2013.xls" an excel file with all the results obtained computing the cover sets and validating the documents.</li>
+    <li>"xml-constraints-implication-TLDKS2013.xls" an excel file with all the results obtained deciding the implication problem.</li>
+</ul>
+<p>(Note: For now we only leave available executable versions for the applications.)</p>
 
 <h3>How to run</h3>
-
 <p>If you want to run our implementations execute the following commands in a console:</p>
+<b>To compute one cover set in one-pass:</b>
+<pre>./cover-uniq -f cover-dataset/keys-padron.in -l label</pre>
+<b>To compute all possible covers:</b>
+<pre>./cover-all -f cover-dataset/keys-padron.in -l label</pre>
+<p>where label is the fixed replacement label needed in the implication problem. The final response for both applications
+is a result.out file with the obtained cover(s).</p>
 
-<pre>./xmlkeys -f dataset/tmp.keys -l label</pre> or,
-<pre>./max-const -f dataset/tmp.softmax -l label</pre>
-
-<p>where label is the fixed replacement label. The final response for both applications
-is a true if the first constraint (first line) in tmp file is implied by the following constraints;
-or false otherwise.</p>
-
-<h4>Other options</h4>
-<ul>
-	<li><b>-t</b> to show the resulting mini-tree</li>
-	<li><b>-w</b> to show the resulting witness-graph or cardinality network</li>
-	<li><b>-m</b> to show the marking set</li>
-</ul>
+<b>To validate an XML document against a set of Max-Keys:</b>
+<pre>./validator -f xml-document.xml -k validation-dataset/padron-full.in -r padron</pre>
+<p>where padron is the root of the xml-document.xml file.</p>
 	
 <h3>Configuration</h3>
 The experiments with implication problem were executed in a Intel Core i7 2.8 GHz machine, with 4 GB of RAM,

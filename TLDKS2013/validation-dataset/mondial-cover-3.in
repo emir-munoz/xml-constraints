@@ -1,0 +1,7 @@
+(epsilon,(country,{@capital,@area,@car_cod}))
+(epsilon,(country,{name.S}))
+(epsilon,(_*.city,{name.S}))
+(epsilon,(_*.city,{@id,latitude,longitude}))
+(epsilon,(_.city,\emptyset))
+(country,(province._,{@id,name.S}))
+(country,(province._,\emptyset;1))

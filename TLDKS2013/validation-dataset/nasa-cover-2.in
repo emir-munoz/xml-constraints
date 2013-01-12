@@ -1,0 +1,7 @@
+(epsilon,(dataset.reference.source.other,{title}))
+(epsilon,(dataset.reference.source.other,{name}))
+(epsilon,(dataset.reference.source.other,{bibcode}))
+(epsilon,(dataset.reference.source.other,\emptyset))
+(epsilon,(dataset,{_}))
+(epsilon,(dataset,{keywords.keyword.S}))
+(epsilon,(_*.title,{S}))

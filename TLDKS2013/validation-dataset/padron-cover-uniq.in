@@ -1,0 +1,5 @@
+# Target with 3239791 nodes
+#(epsilon,(_*,{person.@id,person.@g,person.name,person.address}))
+(epsilon,(_,{person}))
+(epsilon,(comuna,{_.@id,_.@g,_.name}))
+(epsilon,(comuna,{name.given,name.pat,name.mat}))

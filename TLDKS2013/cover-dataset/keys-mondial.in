@@ -1,0 +1,12 @@
+epsilon;country;@capital;1
+epsilon;country;@capital,@area;1
+epsilon;country;@capital,@area,@car_cod;1
+epsilon;country;name.S;1
+epsilon;_*.city;name.S;1
+epsilon;_*.city;@id,name.S;1
+epsilon;_*.city;@id,latitude,longitude;1
+epsilon;_.city;\emptyset;1
+country;province._;@id,name.S;1
+country;province._;@id;1
+country;province.city;@id,name;1
+country;province._;\emptyset;1

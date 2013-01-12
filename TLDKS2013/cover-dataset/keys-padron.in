@@ -1,0 +1,10 @@
+epsilon;comuna;name.given,name.pat,name.mat;1
+epsilon;comuna;_*,person;1
+epsilon;comuna;name.given,name.pat,name.mat,person;1
+epsilon;_;person;1
+epsilon;comuna;person.@id;1
+epsilon;comuna;person.@id,person.@g;1
+epsilon;comuna;_.@id,_.@g,_.name;1
+epsilon;comuna;person.@id,person.@g,person.name.given,person.name.pat,person.name.mat;1
+epsilon;_*;person.@id,person.@g,person.name,person.address;1
+epsilon;comuna;person.@id,person.@g,person.name.given,person.name.pat,person.name.mat,person.address;1

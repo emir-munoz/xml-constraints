@@ -1,0 +1,10 @@
+comuna;person;id,g,name
+comuna;person;id,g,name.given,name.pat,name.mat,address
+comuna;person;id,g,name.given,name.pat,name.mat,address,votingpl
+comuna;person;name.given,name.pat,name.mat,address
+comuna;person;g,name.given,name.pat,name.mat,address,votingpl
+comuna.person;votingpl;circ,num
+comuna.person.votingpl;circ;S
+comuna.person.votingpl;num;S
+comuna.person;name;S
+comuna.person;address;S

@@ -1,0 +1,8 @@
+(_*,(_.high_bidder,\emptyset))
+(_._,(item_info,\emptyset))
+(_,(_.item_info,{quantity}))
+(epsilon,(_*.auction_info,{current_bid._}))
+(epsilon,(_*.buyer_protection_info,{_}))
+(epsilon,(_*,{_.S}))
+(epsilon,(_.buyer_protection_info,{_*}))
+(listing,(_.seller_info,\emptyset))

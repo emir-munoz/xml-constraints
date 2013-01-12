@@ -1,0 +1,15 @@
+(epsilon,(_*.book,{isbn}))
+(epsilon,(_*.book,{_}))
+# Target with 17245 nodes. Needs more than 5 minutes
+#(epsilon,(_*.book._*,{title}))
+(epsilon,(_.book,\emptyset))
+(epsilon,(_*.article.author._,{S}))
+(_*.article,(author._,{S}))
+(_*.article,(_,\emptyset))
+# Target with 6337978 nodes. Needs more than 20 minutes
+#(epsilon,(_*,{title}))
+(epsilon,(_._.chapter,\emptyset))
+(epsilon,(book._.chapter,{title}))
+# Target with 6337978 nodes. Needs more than 20 minutes
+#(epsilon,(_*,{title.S}))
+#(epsilon,(_*,{title._}))

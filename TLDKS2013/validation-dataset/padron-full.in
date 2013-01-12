@@ -1,0 +1,12 @@
+(epsilon,(comuna,{name.given,name.pat,name.mat}))
+# Target with 7 nodes but field path complex
+#(epsilon,(comuna,{_*,person}))
+#(epsilon,(comuna,{name.given,name.pat,name.mat,person}))
+(epsilon,(_,{person}))
+(epsilon,(comuna,{person.@id}))
+(epsilon,(comuna,{person.@id,person.@g}))
+(epsilon,(comuna,{_.@id,_.@g,_.name}))
+(epsilon,(comuna,{person.@id,person.@g,person.name.given,person.name.pat,person.name.mat}))
+# Target with 3239791 nodes
+#(epsilon,(_*,{person.@id,person.@g,person.name,person.address}))
+(epsilon,(comuna,{person.@id,person.@g,person.name.given,person.name.pat,person.name.mat,person.address}))

@@ -1,0 +1,8 @@
+(epsilon,(issue,{volume,number}))
+# Target with 19909 nodes
+#(epsilon,(_*,{volume.S,number.S}))
+(epsilon,(_*.articles.article,{title._}))
+# Target with 19908 nodes
+#(epsilon,(issue._*,{_.S}))
+(issue,(_.article,\emptyset))
+(_*.articles,(_,{title.S}))

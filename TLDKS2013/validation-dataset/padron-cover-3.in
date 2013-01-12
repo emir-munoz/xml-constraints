@@ -1,0 +1,7 @@
+# Target with 7 nodes but person is a complex node
+#(epsilon,(comuna,{name.given,name.pat,name.mat,person}))
+(epsilon,(_,{person}))
+(epsilon,(comuna,{person.@id,person.@g}))
+(epsilon,(comuna,{_.@id,_.@g,_.name}))
+# Target with 3239791 nodes
+#(epsilon,(_*,{person.@id,person.@g,person.name,person.address}))

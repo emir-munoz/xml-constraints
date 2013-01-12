@@ -1,0 +1,12 @@
+epsilon;_*.book;isbn;1
+epsilon;_*.book;_;1
+epsilon;_*.book._*;title;1
+epsilon;_.book;\emptyset;1
+epsilon;_*.article.author._;S;1
+_*.article;author._;S;1
+_*.article;_;\emptyset;1
+epsilon;_*;title;1
+epsilon;_._.chapter;\emptyset;1
+epsilon;book._.chapter;title;1
+epsilon;_*;title.S;1
+epsilon;_*;title._;1

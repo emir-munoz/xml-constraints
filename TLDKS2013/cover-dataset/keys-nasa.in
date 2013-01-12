@@ -1,0 +1,12 @@
+epsilon;dataset;@subject;1
+epsilon;dataset;title.S;1
+epsilon;dataset.reference.source.other;title;1
+epsilon;dataset.reference.source.other;title,author;1
+epsilon;dataset.reference.source.other;name;1
+epsilon;dataset.reference.source.other;bibcode;1
+epsilon;dataset.reference.source.other;\emptyset;1
+epsilon;dataset;_;1
+epsilon;dataset;keywords.keyword.S;1
+epsilon;_*;title.S;1
+epsilon;dataset._*.source._;title.S;1
+epsilon;_*.title;S;1

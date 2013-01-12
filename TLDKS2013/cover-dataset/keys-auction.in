@@ -1,0 +1,13 @@
+epsilon;_*.seller_info;_.S;1
+epsilon;_._.seller_info;_*.S;1
+epsilon;_._.seller_info;_.S;1
+listing;_.seller_info;\emptyset;1
+epsilon;_*.auction_info;current_bid._;1
+_;_*.high_bidder;_.S;1
+_._;item_info;\emptyset;1
+_;_.item_info;quantity;1
+epsilon;_._.high_bidder;_.S;1
+_*;_.high_bidder;\emptyset;1
+epsilon;_*.buyer_protection_info;_;1
+epsilon;_.buyer_protection_info;_*;1
+epsilon;_*;_.S;1

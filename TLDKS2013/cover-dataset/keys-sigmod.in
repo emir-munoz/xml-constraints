@@ -1,0 +1,12 @@
+epsilon;issue;volume,number;1
+epsilon;issue;volume.S,number.S;1
+epsilon;_;volume.S,number.S;1
+epsilon;_*;volume.S,number.S;1
+epsilon;_;_*.volume.S,_*.number.S;1
+epsilon;_*;volume.S;1
+epsilon;_*.articles.article;title._;1
+epsilon;_*.articles.article;title.S;1
+epsilon;issue._*;_.S;1
+issue;_*.article;title.S;1
+issue;_.article;\emptyset;1
+_*.articles;_;title.S;1

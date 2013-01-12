@@ -1,0 +1,9 @@
+(_*.article,(_,\emptyset))
+(epsilon,(_*.article.author._,{S}))
+(epsilon,(_*.book,{_}))
+# Target with 6337978 nodes
+#(epsilon,(_*,{title._}))
+# Target with 6337978 nodes
+#(epsilon,(_*,{title}))
+(epsilon,(_._.chapter,\emptyset))
+(epsilon,(_.book,\emptyset))

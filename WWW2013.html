@@ -50,22 +50,58 @@
 paper "<b>Soft Cardinality Constraints on XML Data</b>" for WWW2013.
 </p>
 
-<h3>Files</h3>
+<h3>Abstract</h3>
+<p>Cardinality constraints capture information about the frequency
+with which data items occur in a given context. Our
+daily life is defined by restrictions and as XML is the standard
+for data exchange and integration, XML data naturally
+exhibits cardinality constraints. Semantics is still an
+inhibitor to the uptake of XML, and cardinality constraints
+can express a lot of semantics important to applications
+such as consistency management, data integration, query
+optimization, view maintenance and cardinality estimation.
+For semi-structured XML data more so than for structured
+data, the more semantics of application domains can be captured
+the less efficient reasoning about these constraints usually
+becomes. In addition, exceptions to strict rules are the
+common norm and are therefore difficult to handle by constraints,
+which makes them often impractical to exploit. Indeed,
+exceptions prove the rule in practice. In this work
+we establish a class of cardinality constraints that is able
+to deal with both problems. We introduce soft cardinality
+constraints which need to be satisfied on average only, and
+thus permit violations in a controlled manner. Starting from
+a highly expressive but intractable class of soft cardinality
+constraints, we establish a fragment that is maximal with
+respect to both expressivity and efficiency. More precisely,
+we characterize the associated implication problem axiomatically
+and develop a low-degree polynomial time decision algorithm.
+Any increase in expressivity of our fragment results
+in coNP-hardness of the implication problem. Finally, we extensively
+test the performance of our algorithm. The performance
+evaluation provides first-hand evidence that reasoning
+about expressive notions of soft cardinality constraints
+is practically efficient and scales well. Our results unleash
+cardinality constraints on real-world XML practice, where a
+little more semantics makes applications a lot more effective
+and where exceptions to common rules frequently occur.</p>
 
+
+<h3>Files</h3>
 <ul>
-	<li>Dataset folder contains all the sets of keys used in the evaluation process.</li>
-    <li>Evaluation folder contains the applications to decide the implication 
-        problem over XML keys and Soft-max constraints. Also contains an excel 
-        file with all the results used to generate the corresponding graphics.</li>
+	<li>"constraints-dataset" folder contains all the sets of constraints used in the decision problem.</li>
+    <li>"xmlkeys" is the application to decide the implication problem over XML keys.</li>
+    <li>"max-const" is the application to decide the implication problem over Soft-max constraints.</li>
+    <li>"xml-constraints-implication-WWW2013.xls" is an excel file with all the results used to generate the corresponding graphics.</li>
 </ul>
 <p>(Note: For now we only leave available executable versions for the applications.)</p>
 
-<h3>How to run</h3>
 
+<h3>How to run</h3>
 <p>If you want to run our implementations execute the following commands in a console:</p>
 
-<pre>./xmlkeys -f dataset/tmp.keys -l label</pre> or,
-<pre>./max-const -f dataset/tmp.softmax -l label</pre>
+<pre>./xmlkeys -f constraints-dataset/tmp.keys -l label</pre> or,
+<pre>./max-const -f constraints-dataset/tmp.softmax -l label</pre>
 
 <p>where label is the fixed replacement label. The final response for both applications
 is a true if the first constraint (first line) in tmp file is implied by the following constraints;
@@ -80,12 +116,12 @@ or false otherwise.</p>
 	
 <h3>Configuration</h3>
 The experiments were executed in a Intel Core i7 2.8 GHz machine, with 4 GB of RAM,
-running a Linux kernel 2.6.32. We compiled our C++ implementation of the algorithms
-using the standard g++ compiler from the GNU compiler Collection 4.6.3.
+running a 64 bits Linux kernel 2.6.32. We compiled our C++ implementation of the algorithms
+using the standard g++ compiler from the GNU Compiler Collection 4.6.3.
 
 <h3>Contact</h3>
 <p>
-For further question please do not hesitate to contact us: <br>
+For further question about the applications please do not hesitate to contact us: <br>
 <a href='mailto:emir.munoz at deri dot org'>emir.munoz<img alt="at" src="./images/at.gif">deri<span>.</span>org</a>
 </p>
 <br>

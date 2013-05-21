@@ -28,7 +28,7 @@
         <span class="ribbon-outer">
           <span class="ribbon-inner">
             <h1><a style="color:white;" href="http://emir-munoz.github.com/xml-constraints/">XML-constraints</a></h1>
-            <h2>XML-constraints project</h2>
+            <h2>XML-constraints projects</h2>
           </span>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
@@ -43,30 +43,59 @@
 
       <span class="banner-fix"></span>
 
-	<section id="main_content">
-        <h2>XML Constraints Project</h2>
+      <section id="main_content">
+        <h2>WISE 2013</h2>
 
-<p>This site contains resources used in different experiments for some papers in the topic of XML Constraints.</p>
+<p>This repository contains the resources used in the experiments of the 
+paper "<b>Soft Cardinality Constraints on XML Data</b>" for WWW2013.
+</p>
 
-<h3>Team</h3>
+<h3>Abstract</h3>
+<p>We introduce soft cardinality constraints which need to be
+satisfied on average only, and thus permit violations in a controlled manner.
+Starting from a highly expressive but intractable class, we establish a
+fragment that is maximal with respect to both expressivity and efficiency.
+More precisely, we characterize the associated implication problem axiomatically
+and develop a low-degree polynomial time decision algorithm.
+Any increase in expressivity of our fragment results in coNP-hardness of
+the implication problem. Finally, we extensively test the performance of
+our algorithm. The performance evaluation provides first-hand evidence
+that reasoning about expressive notions of soft cardinality constraints on
+XML data is practically efficient and scales well. Our results unleash soft
+cardinality constraints on real-world XML practice, where a little more
+semantics makes applications a lot more effective and where exceptions
+to common rules frequently occur.</p>
+
+<h3>Files</h3>
 <ul>
-	<li>Flavio Ferrarotti, Victoria University of Wellington</li>
-	<li>Sven Hartmann, Clausthal University of Technology</li>
-	<li>Sebastian Link, The University of Auckland</li>
-	<li>Mauricio Marin, Yahoo! Labs</li>
-	<li>Emir Muñoz, DERI, National University of Ireland</li>
+	<li>"constraints-dataset" folder contains all the sets of constraints used in the decision problem.</li>
+    <li>"xmlkeys" is the application to decide the implication problem over XML keys.</li>
+    <li>"max-const" is the application to decide the implication problem over Soft-max constraints.</li>
+    <li>"xml-constraints-implication-WWW2013.xls" is an excel file with all the results obtained deciding the implication problem.</li>
 </ul>
+<p>(Note: For now we only leave available executable versions for the applications.)</p>
 
-<h3>Publications</h3>
-<ul>
-  <li><a href="TLDKS2013.html">TLDKS 2013: "The Finite Implication Problem for Expressive XML Keys: Foundations, Applications, and Performance Evaluation"</a></li>
-	<li><a href="http://dx.doi.org/10.1007/978-3-642-32600-4_9">DEXA 2012: "Performance Analysis of Algorithms to Reason about XML Keys"</a></li>
-</ul>
+<h3>How to run</h3>
+<p>If you want to run our implementations execute the following commands in a console:</p>
 
-<h3>Working Papers</h3>
+<pre>./xmlkeys -f constraints-dataset/tmp.keys -l label</pre> or,
+<pre>./max-const -f constraints-dataset/tmp.softmax -l label</pre>
+
+<p>where label is the fixed replacement label. The final response for both applications
+is a true if the first constraint (first line) in tmp file is implied by the following constraints;
+or false otherwise.</p>
+
+<h4>Other options</h4>
 <ul>
-	<li><a href="WISE2013.html">"Soft Cardinality Constraints on XML Data", Submitted to WISE 2013</a></li>
+	<li><b>-t</b> to show the resulting mini-tree</li>
+	<li><b>-w</b> to show the resulting witness-graph or cardinality network</li>
+	<li><b>-m</b> to show the marking set</li>
 </ul>
+	
+<h3>Configuration</h3>
+The experiments were executed in a Intel Core i7 2.8 GHz machine, with 4 GB of RAM,
+running a 64 bits Linux kernel 2.6.32. We compiled our C++ implementation of the algorithms
+using the standard g++ compiler from the GNU Compiler Collection 4.6.3.
 
 <h3>Contact</h3>
 <p>
@@ -84,7 +113,7 @@ Emir Muñoz<br>
 Digital Enterprise Research Institute<br>
 National University of Ireland<br>
 Galway, Ireland<br></p>
-</section>
+      </section>
 
       <footer>
         <span class="ribbon-outer">
